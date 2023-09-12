@@ -24,12 +24,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8097979014938633833}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8097979014938633832
 MonoBehaviour:
@@ -44,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vehicles:
+  - {fileID: 701774983004693622, guid: 44dc6808a86862c40b43832f19a3bdb0, type: 3}
   - {fileID: 701774983004693622, guid: 7f52879bfcab28c44879d0a895411a26, type: 3}
   - {fileID: 701774983004693622, guid: 44dc6808a86862c40b43832f19a3bdb0, type: 3}
   modules:
