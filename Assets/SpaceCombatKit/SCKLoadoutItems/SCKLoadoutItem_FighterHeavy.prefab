@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4454459520761318394
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5888501071990516678}
+  - component: {fileID: 701774983004693622}
+  m_Layer: 0
+  m_Name: SCKLoadoutItem_FighterHeavy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5888501071990516678
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454459520761318394}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &701774983004693622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4454459520761318394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e72ed0136e4a8dd4c8264d2b6f704dbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehiclePrefab: {fileID: 114630294337857678, guid: 5616a13dec26e304ab8f2987b4a4a377,
+    type: 3}
+  overrideVehicleLabel: 0
+  overrideLabel: Label Override
+  description: Heavy space fighter.
+  sprites: []
+  defaultLoadout:
+  - {fileID: 1325631859568036413, guid: 58c4bb084a0f1f14c9ae8ef3619b06ff, type: 3}
+  - {fileID: 114115692733585616, guid: 21757be9c8dc0cc419d6fa0daaf8102b, type: 3}
+  locked: 0
+  moduleMountViewAlignmentOffset: {x: 0, y: 0, z: 0}

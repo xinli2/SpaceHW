@@ -4,5 +4,32 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/SpaceCombatKit/Demos/Scenes/MainScenes/SCK_MainMenu.unity
+    guid: 2415e2c064cc4e14580a797e719a02db
+  - enabled: 1
+    path: Assets/SpaceCombatKit/Demos/Scenes/MainScenes/SCK_Loadout.unity
+    guid: 7940ed2505a20054ebc34c0d0b980356
+  - enabled: 1
+    path: Assets/SpaceCombatKit/Demos/Scenes/MainScenes/SCK_SpaceCombat.unity
+    guid: 8849994249cd811498a169c6a3eaf51b
+  - enabled: 1
+    path: Assets/SpaceCombatKit/Demos/Scenes/MainScenes/SCK_MultipleVehicles.unity
+    guid: 1038593ebb5a6e04cbb8fae4ec8149f2
+  - enabled: 1
+    path: Assets/SpaceCombatKit/Demos/Scenes/MainScenes/SCK_EnemyWaves.unity
+    guid: 8a4288098fa4c804d9b5440a8fabea5d
+  - enabled: 1
+    path: Assets/SpaceCombatKit/Demos/Scenes/MainScenes/SCK_CapitalShips.unity
+    guid: a0edf0e0fd97caf4d986be0a47435696
+  - enabled: 1
+    path: Assets/SpaceCombatKit/Demos/Scenes/SimpleDemos/SCK_Basics_Flying.unity
+    guid: 996ae2c82a4a61c4292d69397815f9d0
+  - enabled: 1
+    path: Assets/SpaceCombatKit/Demos/Scenes/SimpleDemos/SCK_Basics_Weapons.unity
+    guid: 40716a81f1542974ba03105c47fc3569
+  - enabled: 1
+    path: Assets/SpaceCombatKit/Demos/Scenes/MainScenes/SCK_ShipInteriors.unity
+    guid: 7de162d5dcdc8454194b925c337a68bf
   m_configObjects: {}

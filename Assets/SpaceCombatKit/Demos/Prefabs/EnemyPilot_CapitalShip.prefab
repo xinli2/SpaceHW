@@ -1,0 +1,392 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2747756587236394140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2747756587236394139}
+  - component: {fileID: 2747756587236394138}
+  m_Layer: 0
+  m_Name: EnemyPilot_CapitalShip
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2747756587236394139
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747756587236394140}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8439661371055017338}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2747756587236394138
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2747756587236394140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37624c68ade23084a912ea929dd48587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  label: BATTLESHIP
+  isPlayer: 0
+  team: {fileID: 11400000, guid: f6183930511df324ca41846a92df975f, type: 2}
+  startingVehicle: {fileID: 0}
+  onEnteredVehicle:
+    m_PersistentCalls:
+      m_Calls: []
+  onExitedVehicle:
+    m_PersistentCalls:
+      m_Calls: []
+  onDied:
+    m_PersistentCalls:
+      m_Calls: []
+  onRevived:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!1 &4554605273378341323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8439661371055017338}
+  - component: {fileID: 2944026156603706617}
+  m_Layer: 0
+  m_Name: Selector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8439661371055017338
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554605273378341323}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3287749605201578705}
+  - {fileID: 2518914589283583573}
+  - {fileID: 7225291297040833324}
+  m_Father: {fileID: 2747756587236394139}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2944026156603706617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4554605273378341323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f18aefbaada54804c8551baa312d555a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activateInputAtStart: 1
+  inputUpdateConditions:
+    evaluationType: 0
+    conditionsList: []
+    onConditionsMet:
+      m_PersistentCalls:
+        m_Calls: []
+    onConditionsFailed:
+      m_PersistentCalls:
+        m_Calls: []
+  debugInitialization: 0
+  startingVehicle: {fileID: 0}
+  compatibleVehicleClasses: []
+  behaviours:
+  - {fileID: 5711341608426426912}
+  - {fileID: 5761084376203576128}
+  - {fileID: 3579295456605592078}
+--- !u!1 &8169474015636240345
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3287749605201578705}
+  - component: {fileID: 5711341608426426912}
+  m_Layer: 0
+  m_Name: ObstacleAvoidanceBehaviour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3287749605201578705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169474015636240345}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8439661371055017338}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5711341608426426912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8169474015636240345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c824b4122c5aa24e8ade3366d072e31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicle: {fileID: 0}
+  updateEveryFrame: 0
+  shipPIDController:
+    steeringPIDController:
+      controllerXAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerYAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerZAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+    movementPIDController:
+      controllerXAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerYAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerZAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+  maxRotationAngles: {x: 0, y: 0, z: 0}
+  obstacleSphereCasts:
+  - radius: 100
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  ignoreTriggerColliders: 1
+  riskFactorThreshold: 0.1
+  defaultObstacleScanDistance: 5000
+  minObstacleScanDistance: 2000
+  obstacleAvoidanceMargin: 50
+  obstacleMergeDistance: 30
+  maxObstacleDataPoints: 3
+  includeTimeToImpactFactor: 1
+  zeroRiskTimeToImpact: 6
+  fullRiskTimeToImpact: 5
+  reduceSpeedDuringAvoidance: 1
+  includeProximityFactor: 1
+  zeroRiskProximity: 3000
+  fullRiskProximity: 2500
+  useMemory: 1
+  obstacleMemoryTime: 3
+--- !u!1 &8178767404944297812
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7225291297040833324}
+  - component: {fileID: 3579295456605592078}
+  m_Layer: 0
+  m_Name: PatrolBehaviour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7225291297040833324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8178767404944297812}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8439661371055017338}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3579295456605592078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8178767404944297812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be79b880e39f9ed4e910c801fecb1d19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicle: {fileID: 0}
+  updateEveryFrame: 0
+  shipPIDController:
+    steeringPIDController:
+      controllerXAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerYAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerZAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+    movementPIDController:
+      controllerXAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerYAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerZAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+  maxRotationAngles: {x: 45, y: 360, z: 10}
+  patrolRoute: {fileID: 0}
+  maxPatrolTargetArrivalDistance: 50
+  throttle: 1
+  minThrottleWhileTurning: 0.5
+--- !u!1 &9174448663457960778
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2518914589283583573}
+  - component: {fileID: 5761084376203576128}
+  m_Layer: 0
+  m_Name: CombatBehaviour
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2518914589283583573
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9174448663457960778}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8439661371055017338}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5761084376203576128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9174448663457960778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8a77f262c63f4643bfe855166ae8f59, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vehicle: {fileID: 0}
+  updateEveryFrame: 0
+  shipPIDController:
+    steeringPIDController:
+      controllerXAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerYAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerZAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+    movementPIDController:
+      controllerXAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerYAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+      controllerZAxis:
+        proportionalCoefficient: 0.01
+        integralCoefficient: 0
+        derivativeCoefficient: 0
+        integralInfluence: 1
+  maxRotationAngles: {x: 45, y: 360, z: 10}
+  minMaxEngageDistance: {x: 400, y: 1000}
+  minMaxPrimaryFiringPeriod: {x: 2, y: 3}
+  minMaxPrimaryFiringInterval: {x: 8, y: 15}
+  maxFiringAngle: 15
+  broadsideDistanceToTarget: 500

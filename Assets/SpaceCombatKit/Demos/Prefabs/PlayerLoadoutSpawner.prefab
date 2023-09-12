@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9160187105857624260
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9160187105857624261}
+  - component: {fileID: 9160187105857624258}
+  - component: {fileID: 9160187105857624259}
+  m_Layer: 0
+  m_Name: PlayerLoadoutSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9160187105857624261
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9160187105857624260}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9160187105857624258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9160187105857624260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac8ec19cf1e6e5947b2d93744e5a2a13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadoutDataManager: {fileID: 9160187105857624259}
+  loadoutItems: {fileID: 8097979014938633832, guid: f2a8224d0daad1a4d97ca98ac0bf566a,
+    type: 3}
+  player: {fileID: 0}
+  enterVehicleImmediate: 1
+  backupVehiclePrefab: {fileID: 114630294337857678, guid: bfb4e62c148bb074b91ba5ccba7d04a1,
+    type: 3}
+  loadSelectedSlot: 1
+  spawnWaitTime: 0
+  spawnOnStart: 1
+  spawningState: {fileID: 0}
+  spawnedState: {fileID: 0}
+  onDataLoaded:
+    m_PersistentCalls:
+      m_Calls: []
+  onSpawnStarted:
+    m_PersistentCalls:
+      m_Calls: []
+  onSpawned:
+    m_PersistentCalls:
+      m_Calls: []
+  onVehicleSpawned:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &9160187105857624259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9160187105857624260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3249157cf369c14baa01412ecc542a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: SCKLoadout
+  debug: 1
